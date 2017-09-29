@@ -11,7 +11,7 @@
 			b = [];
 
 		$a.each(function() {
-
+                
 			var	$this = $(this),
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
@@ -19,7 +19,7 @@
 
 			b.push(
 				'<a ' +
-					'class="link depth-' + indent + '"' +
+					'class="link depth-' + indent + '"' + addClick($this[0].id)+
 					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
 					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
 				'>' +
@@ -585,3 +585,17 @@
 	};
 
 })(jQuery);
+
+
+
+
+function addClick(valor){
+    console.log(valor);
+    if(valor != null && valor!=""){
+       return "id='"+valor+"'  onclick='abrirPag(event)'   ";
+    }
+    
+    return ;
+
+    
+    }

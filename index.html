@@ -17,6 +17,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
        <!--edições do padrão da template--> 
         <link rel="stylesheet" href="assets/css/editado.css">
+      
         
 	</head>
 	<body class="homepage">
@@ -25,7 +26,8 @@
 			<!-- Header -->
 				<div id="header-wrapper" class="wrapper">
 					<div id="header">
-
+                        <a href="#" id="foo"></a>
+                        
 						<!-- Logo -->
 							<div id="logo">
 								<h1><a href="#">Saúde e vida</a></h1>
@@ -36,7 +38,7 @@
 							<nav id="nav">
 								<ul>
 									
-									<li><a id="home" onclick="abrirPag(null);">Home</a></li>
+									<li><a id="home" href="#" onclick="abrirPag(event);">Home</a></li>
 									<li>
 										<a href="#">Artigos recentes</a>
 										<ul>
@@ -56,7 +58,7 @@
 
 					</div>
 				</div>
-
+                
             <!--mapLoading-->
                 
                 <div id="conteudo_mostrar">
@@ -179,12 +181,13 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            
             <!--mapLoading do site-->
             <script src="ajax.js"></script>
             <script src="map.js"></script>
-        
             <script>abrirPag(null)</script>
             
+            <script src="assets/js/editado.js"></script>    
         
         
 

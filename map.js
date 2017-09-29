@@ -1,10 +1,8 @@
 function abrirPag(valor){
     
-    alert("ta chamando");
     let url;
-    console.log(valor);
     
-    if(valor == null){
+    if(valor==null || valor.toElement.id == "home"){
          url = "home.html";  
     }else{
         url  =  valor.toElement.id;
@@ -20,6 +18,13 @@ function abrirPag(valor){
         document.getElementById("conteudo_mostrar").innerHTML = "<img src='images/loader.gif'>";
     }
 
+    
+    //Atualiza posição inicial da página
+     $(document).ready(function() { 
+        window.location.href='#foo';
+     });
+    
+    
     return url;
     
 }
