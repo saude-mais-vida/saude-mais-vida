@@ -1,0 +1,59 @@
+/*
+    .style1: Alterando as cores
+*/
+
+.wrapper.style1 {
+    background: #09b97e url("images/overlay.png");
+    color: #eee;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.wrapper.style1 .title {
+    background: #09b97e url("images/overlay.png");
+    color: #fff;
+}
+
+
+#highlights .highlight h3 {
+    color: #09b97e;
+}
+
+
+.button.style1 {
+    background: #32CD99 url("images/overlay.png");
+    color: #fff;
+}
+
+.feature-list h3 {
+    color: #32CD99 !important;
+}
+
+
+.button:hover {
+			background-color: #70d8b5;
+		}
+
+
+.button.style1:hover {
+				background-color: #70d8b5;
+			}
+
+button.style1:active,
+    .button.style1:active {
+    background-color: #70d8b5;
+}
+
+
+input[type="button"].style1, input[type="submit"].style1, input[type="reset"].style1, button.style1, .button.style1
+{
+    background-color: #32CD99;  
+}
+
+input[type="button"].style1:hover,
+			input[type="submit"].style1:hover,
+			input[type="reset"].style1:hover,
+			button.style1:hover,
+			.button.style1:hover {
+				background-color: #6cebc1;
+}
