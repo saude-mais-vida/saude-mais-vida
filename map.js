@@ -1,5 +1,6 @@
 function abrirPag(valor){
     
+    alert("ta chamando");
     let url;
     console.log(valor);
     
