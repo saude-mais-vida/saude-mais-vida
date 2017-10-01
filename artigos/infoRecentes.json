@@ -1,0 +1,14 @@
+{
+"recentes":[
+    {"nome":"tosse","id":"tosse","tema":"Problemas com tosse? entenda",
+     "detalhes":"A tosse mesmo sendo algo comum, pode ser motivo de diversas causas. Conheça mais sobre o mesmo."}, 
+    
+    {"nome":"dor de cabeça","id":"dorDeCabeca","tema":"Problemas com tosse? entenda",
+     "detalhes":"A tosse mesmo sendo algo comum, pode ser motivo de diversas causas. Conheça mais sobre o mesmo."}, 
+
+    {"nome":"dor de barriga","id":"dorDeBarriga","tema":"Problemas com tosse? entenda",
+     "detalhes":"A tosse mesmo sendo algo comum, pode ser motivo de diversas causas. Conheça mais sobre o mesmo."}
+    
+]
+    
+}
