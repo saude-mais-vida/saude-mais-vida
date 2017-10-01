@@ -166,11 +166,14 @@
         
         <script>
             
-            abrirPag("topo.html","conteudo_topo");
-
+            
             setTimeout(function(){
+                 setTimeout(function(){
+                     abrirPag("topo.html","conteudo_topo");
+                 },300);
+                
                 abrirPag("footer.html","conteudo_footer");
-            },500);
+            },300);
 
 
             
