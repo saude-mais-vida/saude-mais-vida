@@ -31,7 +31,7 @@ setTimeout(function (){ // tempo para carregar código html
                     
                 }catch(e){
                     
-                    window.location.reload();
+                    location.reload();
                     alert("O site está em BETA, podendo encontrar alguns erros. Pedimos a colaboração e nos informe em caso de erro. Obrigado ");
                     
                     //guia menu (desktop)        
