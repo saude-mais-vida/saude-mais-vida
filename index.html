@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Escape Velocity by HTML5 UP
 	html5up.net | @ajlkn
@@ -7,18 +7,9 @@
 <html>
 	<head>
         
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
         
-        <title>Saúde mais vida</title>
-		<link rel="icon" href="images/icon.jpg">
-        <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-        <!--edições do padrão da template-->
-        <link rel="stylesheet" href="assets/css/editado.css">
-        
+        <div w3-include-html="imports-css.html"></div>
         
         
         
@@ -39,111 +30,113 @@
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
-            <!-- Topo da página -->
-            <div id="conteudo_topo"></div>
+            <!--cabeçalho-->
+            <div w3-include-html="topo.html" id="meuTopo"></div>
+		    
+            <!--corpo-->
+            <article>
 			
-            <!-- Intro -->
-            <div id="intro-wrapper" class="wrapper style1">
-                
-                <div class="title">Introdução</div>
-                <section id="intro" class="container">
-                    <blockquote>
-                    <p class="style1">"A verdadeira amizade é como a saúde: o seu valor só é reconhecido quando a perdemos."<br>-Charles Colton</p>
-                    </blockquote>
-                    <p class="style2">
-                        Fique atualizado com sua saúde, não seja um leigo quando o assunto é o seu bem estar.					
-                    </p>
+                <!-- Intro -->
+                <div id="intro-wrapper" class="wrapper style1">
 
-                </section>
-            </div>
+                    <div class="title">Introdução</div>
+                    <section id="intro" class="container">
+                        <blockquote>
+                        <p class="style1">"A verdadeira amizade é como a saúde: o seu valor só é reconhecido quando a perdemos."<br>-Charles Colton</p>
+                        </blockquote>
+                        <p class="style2">
+                            Fique atualizado com sua saúde, não seja um leigo quando o assunto é o seu bem estar.					
+                        </p>
 
-            <!-- Motivação -->
-            <div class="wrapper style3">
-                <div class="title">Motivação</div>
-                <div id="main" class="container">
-
-                    <!-- Image -->
-                        <!--<a href="#" class="image featured">
-                            <img src="images/pic01.jpg" alt="" />
-                        </a>-->
-
-                    <!-- Features -->
-                        <section id="features">
-                            <header class="style1">
-                                <h2>Os dados assustam</h2>
-                            </header>
-                            <p>
-                               Segundo dados do 
-                                <a href="https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2015/06/02/ibge-revela-como-anda-a-saude-do-brasil.htm">IBGE  mais de 12,1 milhões</a>	
-                                de brasileiros passaram 24 horas ou mais internados em hospitais no periodo entre 2015 e 2016. Realmente é um número grande, tenho certeza que você não quer ser alvo do mesmo censo daqui a algum tempo. 
-
-                            </p>
-                            <br>
-                            <p>
-                                Essa é a hora de correr atrás da sua saúde física e mental, sempre buscando se atualizar e aplicando uma vida saudável no seu dia a dia. Lembre-se, seu corpo pode ser fruto de parte de sua felicidade, assim como pode ser resultado de suas angústias e problemas corriqueiros. 
-                            </p>
-
-                            <header class="style1">
-                                <h2>Não perca tempo</h2>
-                            </header>
-                            <p>
-                                O "Saúde mais Vida" está aqui para te ajudar. Traremos sempre informações resumidas e completas sobre 
-                            o que há de mais procurado no ramo da saúde. Nosso objetivo é esclarecer o máximo de dúvidas quanto a sua
-                            saúde de forma simples e direta. 
-                            </p>
-
-
-                        </section>
-
+                    </section>
                 </div>
-            </div>
 
-            <!-- artigos recentes -->
-            <div class="wrapper style1">
-                <div class="title">Artigos recentes</div>
-                <div id="highlights" class="container">
-                    <div class="row 150%">
-                        <div class="4u 12u(mobile)">
-                            <section class="highlight">
-                                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-                                <h3><a href="#">Aliquam diam consequat</a></h3>
-                                <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                                <ul class="actions">
-                                    <li><a  class="button style1" id="tosse" onclick="abrirPag(event);">Saiba mais</a></li>
-                                </ul>
+                <!-- Motivação -->
+                <div class="wrapper style3">
+                    <div class="title">Motivação</div>
+                    <div id="main" class="container">
+
+                        <!-- Image -->
+                            <!--<a href="#" class="image featured">
+                                <img src="images/pic01.jpg" alt="" />
+                            </a>-->
+
+                        <!-- Features -->
+                            <section id="features">
+                                <header class="style1">
+                                    <h2>Os dados assustam</h2>
+                                </header>
+                                <p>
+                                   Segundo dados do 
+                                    <a href="https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2015/06/02/ibge-revela-como-anda-a-saude-do-brasil.htm">IBGE  mais de 12,1 milhões</a>	
+                                    de brasileiros passaram 24 horas ou mais internados em hospitais no periodo entre 2015 e 2016. Realmente é um número grande, tenho certeza que você não quer ser alvo do mesmo censo daqui a algum tempo. 
+
+                                </p>
+                                <br>
+                                <p>
+                                    Essa é a hora de correr atrás da sua saúde física e mental, sempre buscando se atualizar e aplicando uma vida saudável no seu dia a dia. Lembre-se, seu corpo pode ser fruto de parte de sua felicidade, assim como pode ser resultado de suas angústias e problemas corriqueiros. 
+                                </p>
+
+                                <header class="style1">
+                                    <h2>Não perca tempo</h2>
+                                </header>
+                                <p>
+                                    O "Saúde mais Vida" está aqui para te ajudar. Traremos sempre informações resumidas e completas sobre 
+                                o que há de mais procurado no ramo da saúde. Nosso objetivo é esclarecer o máximo de dúvidas quanto a sua
+                                saúde de forma simples e direta. 
+                                </p>
+
+
                             </section>
-                        </div>
-                        <div class="4u 12u(mobile)">
-                            <section class="highlight">
-                                <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                                <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-                                <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                                <ul class="actions">
-                                    <li><a href="#" class="button style1">Saiba mais</a></li>
-                                </ul>
-                            </section>
-                        </div>
-                        <div class="4u 12u(mobile)">
-                            <section class="highlight">
-                                <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                                <h3><a href="#">Mattis tempus lorem</a></h3>
-                                <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                                <ul class="actions">
-                                    <li><a href="#" class="button style1">Saiba mais</a></li>
-                                </ul>
-                            </section>
-                        </div>
+
                     </div>
                 </div>
-            </div>   
 
+                <!-- artigos recentes -->
+                <div class="wrapper style1">
+                    <div class="title">Artigos recentes</div>
+                    <div id="highlights" class="container">
+                        <div class="row 150%">
+                            <div class="4u 12u(mobile)">
+                                <section class="highlight">
+                                    <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                                    <h3><a href="#">Aliquam diam consequat</a></h3>
+                                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                                    <ul class="actions">
+                                        <li><a  class="button style1" id="tosse" onclick="abrirPag(event);">Saiba mais</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="4u 12u(mobile)">
+                                <section class="highlight">
+                                    <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                                    <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+                                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                                    <ul class="actions">
+                                        <li><a href="#" class="button style1">Saiba mais</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="4u 12u(mobile)">
+                                <section class="highlight">
+                                    <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                                    <h3><a href="#">Mattis tempus lorem</a></h3>
+                                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                                    <ul class="actions">
+                                        <li><a href="#" class="button style1">Saiba mais</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
             
-            <div id="conteudo_footer"></div>
+            </article>
+            
+            <!--rodapé -->
+            <div w3-include-html="footer.html"></div>
             
 		</div>
-
-        
-        
      
         
 		<!-- Scripts -->
@@ -152,37 +145,19 @@
         <script src="assets/js/jquery.dropotron.min.js"></script>
         <script src="assets/js/skel.min.js"></script>
         <script src="assets/js/skel-viewport.min.js"></script>
+        
+          
         <script src="assets/js/util.js"></script>
-
-        <script src="assets/js/editado.js"></script>    
+        <script src="assets/js/editado.js"></script>
 
         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
         <script src="assets/js/main.js"></script>
 
-        <!--mapLoading do site-->
-        <script src="assets/js/ajax.js"></script>
-        <script src="assets/js/map.js"></script>
+        
         
         
         <script>
-            
-            
-            setTimeout(function(){
-                 setTimeout(function(){
-                     abrirPag("topo.html","conteudo_topo");
-                 },300);
-                
-                abrirPag("footer.html","conteudo_footer");
-            },300);
-
-
-            
+            w3.includeHTML();
         </script>
-        
-            
-            
-        
-        
-
 	</body>
 </html>

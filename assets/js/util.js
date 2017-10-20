@@ -1,3 +1,4 @@
+getJson();
 (function($) {
 
 	/**
@@ -6,28 +7,56 @@
 	 */
 	$.fn.navList = function() {
 
+        
 		var	$this = $(this);
 			$a = $this.find('a'),
 			b = [];
-
+        
+        var cont=0;
 		$a.each(function() {
-                
+            
 			var	$this = $(this),
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
 				target = $this.attr('target');
 
-			b.push(
-				'<a ' +
-					'class="link depth-' + indent + '"' + addClick($this[0].id)+
-					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
-				'>' +
-					'<span class="indent-' + indent + '"></span>' +
-					$this.text() +
-				'</a>'
-			);
+            if($this.text()!=""){
+                b.push(
 
+                    '<a ' +
+                        'class="link depth-' + indent + '"' + addClick($this[0].id)+
+                        ( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+                        ( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+                    '>' +
+                        '<span class="indent-' + indent + '"></span>' +
+                        $this.text() +
+                    '</a>'
+                    
+                );
+            
+            }else{
+                
+                b.push(
+
+                    '<a ' +
+                        'class="link depth-' + indent + '" href="' + _myObj.recentes[cont].link +'"'+
+                        ( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+                        ( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+                    '>' +
+                        '<span class="indent-' + indent + '"></span>' +
+                        _myObj.recentes[cont].nome+
+                    '</a>'
+
+                );
+                
+                cont++
+            }
+            
+            
+           
+            
+            
+            
 		});
 
 		return b.join('');
@@ -590,7 +619,6 @@
 
 
 function addClick(valor){
-    console.log(valor);
     if(valor != null && valor!=""){
        return "id='"+valor+"'  onclick='abrirPag(event)'   ";
     }
@@ -598,4 +626,53 @@ function addClick(valor){
     return ;
 
     
-    }
+}
+
+
+
+
+
+
+//****JSON lista recentes***//
+
+var _myObj="noooo";
+
+
+function getJson(){
+   var url = "artigos/infoRecentes.json";
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.open("GET", url);
+    httpRequest.responseType = "text";
+    httpRequest.addEventListener("readystatechange", function () {
+      if (httpRequest.readyState == 4){
+        if (httpRequest.status == 200){
+            
+            if(httpRequest.readyState === 4 && httpRequest.status === 200){
+                
+                var dadosJSON;
+                try {
+                    _myObj = JSON.parse(httpRequest.responseText);
+                    
+                } catch(e) {
+                    eval("dadosJSON = (" + httpRequest.responseJson + ");");
+                }
+                console.log(_myObj);
+            }
+            
+            
+        } else {
+        }
+      }
+    });
+
+    httpRequest.send();
+    
+    
+}
+
+
+
+
+
+
+
