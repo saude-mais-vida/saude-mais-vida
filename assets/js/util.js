@@ -656,7 +656,6 @@ function getJson(){
                 } catch(e) {
                     eval("dadosJSON = (" + httpRequest.responseJson + ");");
                 }
-                console.log(_myObj);
             }
             
             
