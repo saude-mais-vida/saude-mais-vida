@@ -62,7 +62,7 @@ setTimeout(function (){ // tempo para carregar código html
         });
 
     
-},300);
+},500);
 
 
 
